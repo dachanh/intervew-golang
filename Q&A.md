@@ -19,6 +19,8 @@ So sánh Concurrency và parallelism hoặc Concurrency là gì?
 
 Buffer channel và unbuffered channel khác nhau như thế nào ?
 
+different buffer channel and unbuffer channel depened on declare  channel 
+
 Goroutine là gì?
 
 Channels là gì?
@@ -79,11 +81,13 @@ What are the difference between goroutines and threads
     Goroutines:Goroutines exists only in the virtual space of go runtime and not in the OS. and A goroutine is created with initial only 2KB of stack size. Each function in go already has a check if more stack is needed or not and the stack can be copied to another region in memory with twice the original size. This makes goroutine very light on resources.
 
 Why are goroutines light-weight?
+
     A goroutine is created with initial only 2KB of stack size. Each function in go already has a check if more stack is needed or not and the stack can be copied to another region in memory with twice the original size. This makes goroutine very light
 
 (OOP) solid là gì? apply oop trong golang như thế nào?
 
-Có biết API ko? Kể tên 1 vài http method? Phân biệt get vs post?
+    Golang has types and methods and allows an object-oriented style of programming, there is no type hierarchy.Golang has some properties of object oriented programming like Encapsulation , Composition , but it doesn't have inheritance , classes , function overloading .
+    Có biết API ko? Kể tên 1 vài http method? Phân biệt get vs post?
 
 
 SQL vs NOSQL ?
@@ -109,7 +113,7 @@ variadic function?
     These functions are generally used for string formatting.
     Variadic parameter can not be specified as return value, but we can return the variable of type slice from the function.
     Consider an example code below:
-    ```
+
         func function_name(arg1, arg2...type)type{
             // Some statements
         }
@@ -135,8 +139,7 @@ variadic function?
         fmt.Println(joinstring("Golang", "Interview", "Questions"))
             
         }
-    ```
-    Here, we have a variadic function called joinstring that takes a variable number of arguments of a type string. We are trying to join the arguments separated by the hyphen symbol. We are demonstrating the variadic function behaviour by first passing 0 arguments and then passing multiple arguments to the function. The output of this code is:
+            Here, we have a variadic function called joinstring that takes a variable number of arguments of a type string. We are trying to join the arguments separated by the hyphen symbol. We are demonstrating the variadic function behaviour by first passing 0 arguments and then passing multiple arguments to the function. The output of this code is:
     ```
         Interview-Bit
         Golang-Interview-Questions
