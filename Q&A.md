@@ -5,21 +5,25 @@
     - SLICE : Slices are much more flexible, powerful, and convenient than arrays. Unlike arrays, slices can be resized using the built-in append function .
 
 What is pointer?
-- Those variables that hold the address of any variables
-Pointers are used for the following purposes:
-    -Allowing function to directly mutate value passed to it. That is achieving pass by reference functionality.
-    -For increasing the performance in the edge cases in the presence of a large data structure. Using pointers help to copy large data efficiently
-    -Helps in signifying the lack of values. For instance, while unmarshalling JSON data into a struct, it is useful to know if the key is present or absent then the key is present with 0 value.
+
+    Those variables that hold the address of any variables
+    Pointers are used for the following purposes:
+        
+        - Allowing function to directly mutate value passed to it. That is achieving pass by reference functionality.
+
+        - For increasing the performance in the edge cases in the presence of a large data structure. Using pointers help to copy large data efficiently
+        - Helps in signifying the lack of values. For instance, while unmarshalling JSON data into a struct, it is useful to know if the key is present or absent then the key is present with 0 value.
 
 Normal variable vs pointer variable?
     
 So sánh Concurrency và parallelism hoặc Concurrency là gì?
 
-
-
 Buffer channel và unbuffered channel khác nhau như thế nào ?
 
-different buffer channel and unbuffer channel depened on declare  channel 
+- different buffer channel and unbuffer channel is declare capacity of channel 
+- channel use get and pop element the same as FIFO 
+- buffer channel will block the goroutine if the len equal the capacity of channel 
+every 
 
 Goroutine là gì?
 
@@ -71,7 +75,7 @@ Interface là gì? Empty interface là gì, dùng như thế nào?
     }
     ```
     Interfaces can make code clearer, shorter, more readable, and they can provide a good API between packages, or clients (users) and servers (providers).
-
+- Empty Interface 
 Panic và recover ?
 
 What are the difference between goroutines and threads
@@ -140,7 +144,29 @@ variadic function?
             
         }
             Here, we have a variadic function called joinstring that takes a variable number of arguments of a type string. We are trying to join the arguments separated by the hyphen symbol. We are demonstrating the variadic function behaviour by first passing 0 arguments and then passing multiple arguments to the function. The output of this code is:
+Data type Golang:
+
+    Method
+    Boolean
+    Numeric
+    String
+    Array
+    Slice
+    Struct
+    Pointer
+    Function
+    Interface
+    Map
+    Channel
+
+Package in Golang:
+
+    A package is a collection of source files in the same directory that are compiled together.
+    
     ```
         Interview-Bit
         Golang-Interview-Questions
     ```
+
+How do we perform inheritance with Golang?
+User reciver function golang
