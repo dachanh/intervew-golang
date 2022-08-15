@@ -170,3 +170,7 @@ Package in Golang:
 
 How do we perform inheritance with Golang?
 User reciver function golang
+
+GRPC
+
+https://earthly.dev/blog/golang-grpc-example/
